@@ -18,9 +18,9 @@ import pandas as pd
 from datetime import datetime
 
 #all_template is a list that contains the FULL-FILE PATH to all the templates you want to loop through to create your ending aggregated files
-all_templates = [r'C:\Users\cthieme\Documents\JUNK\Python Stuff\BI Projects\David Vannoy Project\Templates\107300.xlsx',
-                r'C:\Users\cthieme\Documents\JUNK\Python Stuff\BI Projects\David Vannoy Project\Templates\107302.xlsx', 
-                r'C:\Users\cthieme\Documents\JUNK\Python Stuff\BI Projects\David Vannoy Project\Templates\107306.xlsx']
+all_templates = [r'C:FilePath\Templates\107300.xlsx',
+                r'C:\FilePath\Templates\107302.xlsx', 
+                r'C:\FilePath\Templates\107306.xlsx']
 
 #Function to GROUPBY GL & Description Column
 def grouped_by(template_loc):
@@ -99,7 +99,7 @@ grouped_all_cost_centers = pd.concat(grouped_data_to_append)
 detail_all_cost_centers = pd.concat(detail_data_to_append)
 
 #The below filepaths are where you want the ending files to go for the grouped data and the detailed data, respectively
-grouped_all_cost_centers.to_excel(r"C:\Users\cthieme\Documents\JUNK\Python Stuff\BI Projects\David Vannoy Project\TM1 Publish Data\grouped_test.xlsx", index = False)
-detail_all_cost_centers.to_excel(r"C:\Users\cthieme\Documents\JUNK\Python Stuff\BI Projects\David Vannoy Project\Visualization Data\detail_test.xlsx", index = False)
+grouped_all_cost_centers.to_excel(r"C:FilePath\TM1 Publish Data\grouped_test.xlsx", index = False)
+detail_all_cost_centers.to_excel(r"C:FilePath\detail_test.xlsx", index = False)
     
     
