@@ -9,9 +9,9 @@ import win32com.client
 
 
 ##############all_templates is a list that needs to contain the full_path to the files you want to update##########################
-all_templates = [r"\\collab.micron.com@SSL\DavWWWRoot\corp\Legal\AcctFinRpts\Shared Documents\Budget and Expenses\Python Test\107300.xlsx",
-                 r"\\collab.micron.com@SSL\DavWWWRoot\corp\Legal\AcctFinRpts\Shared Documents\Budget and Expenses\Python Test\107302.xlsx",
-                 r"\\collab.micron.com@SSL\DavWWWRoot\corp\Legal\AcctFinRpts\Shared Documents\Budget and Expenses\Python Test\107306.xlsx"] 
+all_templates = [r"\\FilePath\Python Test\107300.xlsx",
+                 r"\\FilePath\Python Test\107302.xlsx",
+                 r"\\FilePath\Python Test\107306.xlsx"] 
 
 ##################### write the name of the Macro you want to run ##################################################################
 
